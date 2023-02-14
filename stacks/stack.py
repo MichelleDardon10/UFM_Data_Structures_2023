@@ -43,7 +43,7 @@ class Stack:
 
     def pop(self) -> str:
         '''
-        Pops element out of stack.
+        Pops element out of stack.  SACARLO
         
         Args:
             None
@@ -66,7 +66,7 @@ class Stack:
 
     def peek(self) -> str:
         '''
-        Peeks topmost element.
+        Peeks topmost element. BUSCARLO
 
         Args:
             None

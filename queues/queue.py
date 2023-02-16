@@ -67,3 +67,28 @@ class LinearQueue:
         self.elements[self.front] = None # (Optional)
         self.front += 1
         return value
+    
+
+
+
+
+
+    def search(self, val: str) -> None:
+
+        while self.front <= self.rear:
+
+            if self.elements[self.front] == val:
+                print("Val esta en ", self.front)
+                return val
+            self.front += 1
+        print("Hmm no esta")   
+        self.front = 0
+
+    def peek(self) -> None:
+        este = self.elements[self.front]
+        print(este)
+
+
+
+
+

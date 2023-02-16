@@ -10,25 +10,25 @@ stack.push('A')
 # Other pushes
 stack.push('B')
 print(stack)
-stack.push('C')
-print(stack)
-stack.push('D')
-print(stack)
-stack.push('E')
-print(stack)
+# stack.push('C')
+# print(stack)
+# stack.push('D')
+# print(stack)
+# stack.push('E')
+# print(stack)
 # stack.push('F') # Forces stack overflow
 
-# Pops SACAR
-stack.pop()
-print(stack)
-stack.pop()
-print(stack)
-stack.pop()
-print(stack)
-stack.pop()
-print(stack)
-stack.pop()
-print(stack)
+# # Pops SACAR
+# stack.pop()
+# print(stack)
+# stack.pop()
+# print(stack)
+# stack.pop()
+# print(stack)
+# stack.pop()
+# print(stack)
+# stack.pop()
+# print(stack)
 # stack.pop() # Forces stack underflow
 
 # Peek BUSCAR

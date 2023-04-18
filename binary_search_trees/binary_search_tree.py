@@ -96,3 +96,31 @@ class BinarySearchTree:
             subtree = subtree.right_child
 
         return subtree
+    
+    def delete(self, key: int):
+        if self.root is None:
+            return False
+        else:
+            self.root = self._delete(key, self.root)
+
+    def _delete(self, key: int, subtree: Node):
+        if subtree is None:
+            return False
+        
+        if key < subtree.data:
+            subtree.left_child = self._delete(key, subtree.left_child)
+        elif key > subtree.data:
+            subtree.right_child = self._delete(key, subtree.right_child)
+        else:
+            if subtree.left_child is None:
+                temp = subtree.right_child
+                subtree = None
+                return temp
+            elif subtree.right_child is None:
+                temp = subtree.left_child
+                subtree = None
+                return temp
+            temp = self.find_min(subtree.right_child)
+            subtree.data = temp.data
+            subtree.right_child = self._delete(temp.data, subtree.right_child)
+        return subtree

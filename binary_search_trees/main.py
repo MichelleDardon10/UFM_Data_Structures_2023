@@ -41,3 +41,8 @@ for key in test_keys:
 print('\n*** Searching for min-max in Tree ***\n')
 print('Min: {}'.format(bst.find_min(bst.root)))
 print('Max: {}'.format(bst.find_max(bst.root)))
+
+# Delete 
+print('\n*** Deleting nodes in Tree ***\n')
+bst.delete(4) # delete node with key 33
+bst.traverse(bst.root)
